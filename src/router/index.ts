@@ -23,6 +23,17 @@ const routes: Array<RouteConfig> = [
 
     component: () => import("@/views/MyDrag.vue"),
   },
+  {
+    path: "/add-drag",
+    name: "add-drag",
+    component: () => import("@/views/AddDrag.vue"),
+  },
+  //   drag move
+  {
+    path: "/move-drag",
+    name: "drag-move",
+    component: () => import("@/views/MoveDrag.vue"),
+  },
 ];
 
 const router = new VueRouter({
