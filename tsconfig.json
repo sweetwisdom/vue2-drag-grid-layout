@@ -1,41 +1,26 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "esnext",
     "module": "esnext",
-    "strict": true,
+    "strict": false,
     "jsx": "preserve",
-    "importHelpers": true,
     "moduleResolution": "node",
+    "experimentalDecorators": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
     "useDefineForClassFields": true,
+    "allowJs": true,
+    "outDir": "dist",
     "sourceMap": true,
     "baseUrl": ".",
-    "types": [
-      "webpack-env"
-    ],
+    "types": ["webpack-env"],
     "paths": {
-      "@/*": [
-        "src/*"
-      ]
+      "@/*": ["src/*"]
     },
-    "lib": [
-      "esnext",
-      "dom",
-      "dom.iterable",
-      "scripthost"
-    ]
+    "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
   },
-  "include": [
-    "src/**/*.ts",
-    "src/**/*.tsx",
-    "src/**/*.vue",
-    "tests/**/*.ts",
-    "tests/**/*.tsx"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue", "tests/**/*.ts", "tests/**/*.tsx", "src/router/index.js", "src/**/*"],
+  "exclude": ["node_modules", "html/**/*.html", "dist/**/*.js", "dist/**/*.js.map", "dist/**/*.d.ts"]
 }
